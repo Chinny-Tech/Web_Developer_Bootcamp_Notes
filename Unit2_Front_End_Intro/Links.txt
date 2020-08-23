@@ -1,0 +1,2 @@
+How the internet works - https://www.youtube.com/watch?v=qEdv_pem-JM
+Codepen to understand HTML/CSS/JS basics - https://codepen.io/Colt/pen/WQQVvE

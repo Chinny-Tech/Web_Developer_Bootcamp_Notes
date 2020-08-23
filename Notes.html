@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Web Developer Bootcamp Notes</title>
+</head>
+<body>
+<!-- Heading Start-->
+	<h1>The Web Developer Bootcamp</h1>
+<!-- Heading Stop -->
+<!-- Intro Start -->
+	<h2>The only course you will ever need</h2>
+	<ul>
+		<li>Everything is up to date and relevant (no PHP, Python or Ruby)</li>
+		<li>Main focus on JS and covers NodeJS</li>
+		<li>Constatntly updated with new content, projects, and modules</li>
+	</ul>
+<!-- Intro Stop -->
+<!-- Syllabus Start -->
+	<h2>Syllabus</h2>
+<!-- Front End Start -->
+<!-- Front End Intro Start -->
+	<h3>Intro to Front End</h3>	
+		<ol>
+			<li>Set up environment (Install Chrome & Sublime)
+			</br>When you're using the html + tab tab completion shortcut, be sure that the file's syntax is set to HTML. 
+			</br>It should say "HTML" in the lower right corner of the window. If it says "Plain Text" then you'll need to click it and change it to "HTML" before the tab completions for HTML tags will work properly.</li>
+			<li>Compare front end and backend</li>
+			<li>Define roles of HTML, CSS and JavaScript</li>
+		</ol>
+<!-- Front End Intro Stop -->
+<!-- Internet Overview Start -->
+	<h3>How the internet works</h3>	
+		<ul> <!-- ul 1 start -->
+			<li>Understand how the internet works</li>
+					<ul> <!-- ul 2 start -->
+						<li>Basic</li>
+											<ol> 
+												<li>user requests website</li>
+												<li>request sent to server</li>
+												<li>webpage broke down into packouts for transmission</li>
+											</ol>
+						<li>Detailed</li>
+											<ol>
+												<li>query submitted to ISP</li>
+												<li>ISP taken domain name and converts to IP (DNS)</li>
+												<li>request sent</li>
+												<li>server responds</li>
+												<li>server responds wth requested content</li>
+												<li>server sends code</li>
+												<li>browser converts code to UI</li>
+											</ol>
+					</ul> <!-- ul stop -->
+			<li>Understand difference between front and back end</li>
+					<ul>
+						<li>Front End is what you see (HTML, CSS and JS)</li>
+						<li>Back End is everything else (so many choices)</li>
+						<li>Restaurant analogy of a website</li>
+							<ul>
+								<li>Backend is the kitchen</li>
+								<li>Frontend is what is plated and sent to the table</li>
+							</ul>
+						<li>HTML</li>
+							<ul>
+								<li>HyperText Markup Language</li>
+								<li>Defines the structure</li>
+								<li>'nouns' of a webpage</li>
+							</ul>
+						<li>CSS</li>
+							<ul>
+								<li>Cascading Style Sheets</li>
+								<li>Defiens the style of HTML</li>
+								<li>'adjectives' of a webpage</li>
+							</ul>
+						<li>JS</li>
+							<ul>
+								<li>JavaScript</li>
+								<li>Adds logic and interactivty to a page</li>
+								<li>'verbs' of a webpage</li>
+							</ul>
+					</ul>
+			<li>View HTML on any gven site</li>
+		</ul> <!-- ul 1 stop -->
+<!-- Internet Overview Stop -->
+<!-- HTML Intro Start -->
+	<h3>Intro to HTML</h3>
+		<ul> <!-- ul for HTML intro open -->
+			<li>Write properly strcutured HTML docs</li>
+				<ul>
+					<li>General rule</li>
+						<ul>
+							<li><code>&lt;tagname&gt; Content &lt;/tagname&gt;</code></li>
+						</ul>
+					<li>Intro to MDN</li>
+						<ul><li>Mozilla Developer Network</li></ul>
+					<li>HTML Boilerplate and comments</li>
+						<ul>
+							<li>Save as .html</li>
+							<li>document needs to have a boilerplate which can be achieve by typing <code>&lt;h</code> & pressing the <code>"Tab"</code> key</li>
+						</ul>
+					<pre>
+&lt;!DOCTYPE html&gt; - defines the document type as HTML
+	&lt;html&gt; - HTML root element, everything needs to be inside the html element, 1 head followed by 1 body
+		&lt;head&gt; - general info (metadata) about doc, including title and links to definitions of scripts
+&lt;!-- Comment --&gt; - these are notes - 'Ctrl' + '/'
+			&lt;title&gt;Webpage Title&lt;/title&gt; - Name on Tab, SEO/links
+		&lt;/head&gt;
+		&lt;body&gt; - where the content goes
+&lt;!-- Comment --&gt;
+		&lt;/body>
+	&lt;/html&gt;
+					</pre>
+				</ul>
+			<li>Write common closing and self closing tags</li>
+				<ul>
+					<li>Basic Tags</li>
+						<ul>
+							<li>Heading Tags</li>
+							<ul>
+								<li>Heading tags are block level elements and run from 1 to 6</li>
+								<li><code>&lt;h1&gt; Biggest heading tag&lt;/h1&gt;</code></li>
+								<li><code>&lt;h2&gt; Secondary heading tag&lt;/h2&gt;</code></li>
+								<li><code>&lt;h6&gt; Smallest heading tag&lt;/h6&gt;</code></li>
+							</ul>
+							<li>Paragraph Tags</li>
+							<ul>
+								<li>Paragraph tags are block level elements used for displaying a paragraph</li>
+								<li><code>&lt;p&gt; This is a paragraph&lt;/p&gt;</code></li>
+							</ul>
+							<li>Adding bold or Italics</li>
+							<ul>
+								<li>Bold or Italics should be added as a style, but can be used in HTML to emphasise something or making it strong</li>
+								<li>These tags are inline so they will not create a new line</li>
+								<li><code>&lt;strong&gt;Bold text goes here&lt;/strong&gt;</code></li>
+								<li><code>&lt;em&gt;Italicised text goes here&lt;/em&gt;</code></li>
+									<ul>
+										<li>This line shows <strong>strong</strong> and <em>emphasised</em> text</li>
+									</ul>
+							</ul>
+						</ul>
+					<li>Lists in HTML</li>
+					<ul>
+						<li>There 2 types of lists that can be created in HTML5</li>
+							<ol>
+								<li>Ordered lists</li>
+									<ul>
+										<li>Ordered lists are lists that are numbered, the format of the number can be defined within CSS</li>
+										<li>Ordered lists are the following format</li>
+										<pre>
+&lt;ol&gt;
+	&lt;li&gt;List item one&lt;/li&gt;
+	&lt;li&gt;List item two&lt;/li&gt;
+	&lt;li&gt;List item three&lt;/li&gt;
+&lt;/ol&gt;
+										</pre>
+										<li>Here's how it would look</li>
+											<ol>
+												<li>List item one</li>
+												<li>List item two</li>
+												<li>List item three</li>
+											</ol>
+									</ul>
+								<li>Unordered lists</li>
+								<ul>
+									<li>Unordered lists are bullet pointed lists</li>
+									<li>Unordered lists are the following format</li>
+										<pre>
+&lt;ul&gt;
+	&lt;li&gt;List item one&lt;/li&gt;
+	&lt;li&gt;List item two&lt;/li&gt;
+	&lt;li&gt;List item three&lt;/li&gt;
+&lt;/ul&gt;
+										</pre>
+										<li>Here's how it would look</li>
+											<ul>
+												<li>List item one</li>
+												<li>List item two</li>
+												<li>List item three</li>
+											</ul>
+										<li>Note the only the opening and closing tags change from <code>&lt;ol&gt;</code> to <code>&lt;ul&gt;</code>.</li>
+								</ul>
+							</ol>
+						<li>Lists can be nested within list just like this webpage</li>
+					</ul>
+					<li><a href="C:\Users\Nathan\Documents\Study\Web_Dev_Bootcamp\Unit3_Into_To_HTML\quiz1.html">Quiz 1 recap showing what I've learned so far</a></li>
+				</ul>
+			<li>Write tags with a differnece</li>
+			<li>Recreate a simple website based on a provided photo</li>
+		</ul> <!--	ul for HTML intro open -->
+<!-- HTML Intro Stop -->
+<!-- Front End Stop -->
+<!-- Syllabus Stop -->
+	</body>
+</html>
